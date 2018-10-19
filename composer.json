@@ -3,7 +3,7 @@
     "description": "Laravel migration for procedures generator",
     "type": "library",
     "require": {
-        "php": "^5.4"
+        "php": "^7.2"
     },
     "autoload": {
         "psr-4": {
