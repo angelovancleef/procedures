@@ -13,7 +13,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Bolboosch\\Procedures\\src\\providers\\ProcedureServiceProvider"
+                "Bolboosch\\Procedures\\Providers\\ProceduresServiceProvider"
             ]
         }
     },
