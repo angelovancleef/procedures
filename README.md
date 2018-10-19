@@ -1,3 +1,7 @@
+Work in progress, do not download this.
+
+============================================
+
 Laravel procedure migration generator
 
 This package will generate migrations from any procedures that currently remain in your database.
