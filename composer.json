@@ -10,6 +10,13 @@
             "Bolboosch\\Procedures\\": "src"
         }
     },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Bolboosch\\Procedures\\src\\providers\\ProcedureServiceProvider"
+            ]
+        }
+    },
     "license": "MIT",
     "authors": [
         {
