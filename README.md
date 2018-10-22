@@ -19,6 +19,19 @@ In older versions of the framework edit *config/app.php* and add this to provide
 Bolboosch\Procedures\Providers\ProceduresServiceProvider::class,
 ````
 
+###### Additional information
+Out of the box we extend the "welcome" layout in our views. If you do not want to use this you either need 
+to change the name, or remove the:
+
+```
+@extends('welcome')
+@section('content')
+    // code here...
+@endsection
+```
+
+lines from both views (index.blade.php and finished.blade.php) in the views folder.
+
 ## Usage
 To generate procedure migrations from a database, you need to have your database setup in Laravel's Config.
 
@@ -36,8 +49,6 @@ and stored in the "migrations" folder in your project root.
 * Initial upload of the base project
 
 ## Contributors
-
-
 
 ## License
 The Laravel Migrations Generator is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT)
