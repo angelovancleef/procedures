@@ -1,4 +1,5 @@
 <?php
+// Define a namespace so we dont have to repeat ourselfs for future routes
 define('bb_namespace', 'Bolboosch\Procedures\Controllers\\');
 
 
