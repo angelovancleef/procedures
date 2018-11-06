@@ -43,12 +43,18 @@ procedures you wish to migrate, press the "migrate" button and your migrations w
 and stored in the "migrations" folder in your project root. 
 
 ## Changelog
+###### 6th November 2018 v1.0.0
+
+* Fixed a typo which sometimes made your procedure malfunction
+* Capitalized SQL queries
+
 ###### 19th October 2018 v0.0.1-alpha
 
 * Tweaking the code here and there
 * Initial upload of the base project
 
 ## Contributors
+ikbenbas
 
 ## License
 The Laravel Migrations Generator is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT)
