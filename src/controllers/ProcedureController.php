@@ -103,7 +103,9 @@ class ProcedureController extends Controller
 		// Add the parameters
 		foreach($list as $param) {
 			
-			$parameters .= $param->PARAMETER_MODE.' `'.$param->PARAMETER_NAME.'` '.$param->DATA_TYPE.',';
+			$maxLength = $param->CHARACTER_MAXIMUM_LENGTH ? '('.$param->CHARACTER_MAXIMUM_LENGTH.')' : '';
+			
+			$parameters .= $param->PARAMETER_MODE.' `'.$param->PARAMETER_NAME.'` '.$param->DATA_TYPE.$maxLength.',';
 			
 		}
 		
