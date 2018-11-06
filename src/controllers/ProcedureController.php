@@ -103,7 +103,7 @@ class ProcedureController extends Controller
 		// Add the parameters
 		foreach($list as $param) {
 			
-			$parameters .= $param->PARAMETER_MODE.' `'.$param->SPECIFIC_NAME.'` '.$param->DATA_TYPE.',';
+			$parameters .= $param->PARAMETER_MODE.' `'.$param->PARAMETER_NAME.'` '.$param->DATA_TYPE.',';
 			
 		}
 		
