@@ -98,13 +98,13 @@ class ProcedureController extends Controller
 	{
 		$parameters = '';
 		
-		$list = $this->query('select * from INFORMATION_SCHEMA.PARAMETERS where SPECIFIC_NAME="'.$name.'" order by ORDINAL_POSITION ');
+		$list = $this->query('SELECT * FROM INFORMATION_SCHEMA.PARAMETERS WHERE SPECIFIC_NAME="'.$name.'" ORDER BY ORDINAL_POSITION ');
 		
 		// Add the parameters
 		foreach($list as $param) {
 			
 			$maxLength = $param->CHARACTER_MAXIMUM_LENGTH ? '('.$param->CHARACTER_MAXIMUM_LENGTH.')' : '';
-			
+
 			$parameters .= $param->PARAMETER_MODE.' `'.$param->PARAMETER_NAME.'` '.$param->DATA_TYPE.$maxLength.',';
 			
 		}
@@ -124,7 +124,7 @@ class ProcedureController extends Controller
 	{
 		foreach($listOfProcedures as $proc) {
 			
-			$proc->addedInformationData = $this->query('select * from INFORMATION_SCHEMA.PARAMETERS where SPECIFIC_NAME=\''.$proc->SPECIFIC_NAME.'\' order by ORDINAL_POSITION ');
+			$proc->addedInformationData = $this->query('SELECT * FROM INFORMATION_SCHEMA.PARAMETERS WHERE SPECIFIC_NAME=\''.$proc->SPECIFIC_NAME.'\' ORDER BY ORDINAL_POSITION ');
 			
 		}
 	}
