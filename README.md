@@ -1,8 +1,4 @@
-> Work in progress, do not download this yet.
-
-
-
-## Laravel procedure migration generator
+## Laravel procedures
 
 Generate procedure migrations from an existing database, including all needed information like parameters 
 and various other needed information!
