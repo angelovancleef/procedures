@@ -50,7 +50,7 @@ and stored in the "migrations" folder in your project root.
 * Initial upload of the base project
 
 ## Contributors
-ikbenbas
+@ikbenbas
 
 ## License
 The Laravel Migrations Generator is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT)
